@@ -1,0 +1,76 @@
+body {
+    background-color: #3b4d60;
+    margin:20px;
+}
+
+.container {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hikkosi_px{
+    font-size:20px;
+}
+
+input.done {
+    color: gainsboro;
+}
+
+.checked-text:checked ~ label.css-sample-box {
+    color: gainsboro;
+}
+
+.btn {
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:20px;
+    display: inline-block;
+    padding: 1.5em 3.5em;
+    text-decoration: none;
+    color: #7ea2b8;
+    border: solid 2px #7ea2b8;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+    .btn:hover {
+        background: #7ea2b8;
+        color: white;
+    }
+
+    .btn:active {
+        top: 4px;
+        text-shadow: none;
+    }
+
+.box {
+    background: #e7eaf3;
+    font-size: 100%;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* checkbox non-display */
+.add-control .chk {
+    display: none;
+}
+/* button control */
+.add-control #open-close ~ .btn-open-close::before {
+    content: "home";
+}
+
+.add-control #open-close ~ .box {
+    display: none;
+}
+
+.add-control #open-close:checked ~ .btn-open-close::before {
+    content: "home";
+}
+
+.add-control #open-close:checked ~ .box {
+    display: block;
+}
+
+
